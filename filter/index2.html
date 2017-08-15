@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+  <title></title>
+  <!-- First add the javascript file to the page -->
+  <script type="text/javascript" src="ANCESTRY_FILE.js"></script>
 </head>
 <body>
 <script type="text/javascript">
-var ancestry = JSON.parse(ANCESTRY_FILE);//I want to use the var ANCESTRY_FILE here. But somthing is showing wrong. 
-// I don't want to copy the whole code here. Is there any other way?
+var ancestry = JSON.parse(ANCESTRY_FILE);
 
+//Another great way would be adding an ajax call to get the data from the file.
 
+//Store the data in a file with extension .json and get the data via ajax
 
 console.log(ancestry.length);
-	
+  
 </script>
 </body>
 </html>
