@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Summerizing with reduce!</title>
+</head>
+<body>
+<script type="text/javascript">
+	//functions are values
+	var animals = [
+		{name: 'fluffy', species: 'rabbit'},
+		{name: 'Sona', species: 'dog'},
+		{name: 'Dholu', species: 'dog'},
+		{name: 'meow', species: 'cat'},
+		{name: 'Ursula', species: 'cat'},
+	]
+
+	// var dogs = []
+	// for (var i = 0; i < animals.length; i++){
+	// 	if (animals[i].species === 'dog')
+	// 		dogs.push(animals[i])
+	// }
+	// console.log(dogs);
+
+	var dogs = animals.filter(function(animal){
+		console.log(animal.species === 'dog');
+	})
+</script>
+</body>
+</html>
